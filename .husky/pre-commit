@@ -1,0 +1,7 @@
+echo "Running pre-commit hook..."
+
+# Run lint and format on all staged files
+if ! yarn lint-staged --concurrent false; then
+  echo "The pre-commit hook encountered issues. Please check the linting errors above."
+  exit 1
+fi
