@@ -1,7 +1,7 @@
-type Listener<T> = (val: T) => void;
+export type Listener<T> = (val: T) => void;
 type Unsubscribe = () => void;
 type Subscribe<T> = (listener: Listener<T>) => Unsubscribe;
-interface Observable<T> {
+export interface Observable<T> {
   subscribe: Subscribe<T>;
 }
 
