@@ -8,6 +8,7 @@ export enum Page {
 
   CompoundComponents = "/compound-components",
   CompoundComponentsSelect = "/compound-components/select",
+  CompoundComponentsImageUploader = "/compound-components/image-uploader",
 }
 
 export interface NavigationItem {
@@ -44,6 +45,10 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
       {
         label: "Select",
         pathname: Page.CompoundComponentsSelect,
+      },
+      {
+        label: "Image Uploader",
+        pathname: Page.CompoundComponentsImageUploader,
       },
     ],
   },
