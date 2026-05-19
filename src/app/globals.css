@@ -129,3 +129,7 @@
     @apply font-sans;
   }
 }
+
+@utility center {
+  @apply flex items-center justify-center;
+}

@@ -2,6 +2,7 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Toaster } from "sonner";
 
 import { Sidebar } from "@/components/sidebar";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className="h-full flex gap-2">
         <Sidebar />
         <div className="flex-1 overflow-auto">{children}</div>
+        <Toaster />
       </body>
     </html>
   );
