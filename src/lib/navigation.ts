@@ -5,6 +5,8 @@ export enum Page {
   DesignPatternsObserver = "/design-patterns/observer",
   DesignPatternsObserverToast = "/design-patterns/observer/toast",
   DesignPatternsObserverWindowEvent = "/design-patterns/observer/window-event",
+  DesignPatternsState = "/design-patterns/state",
+  DesignPatternsStateOnboarding = "/design-patterns/state/onboarding",
   DesignPatternsStrategy = "/design-patterns/strategy",
   DesignPatternsStrategyPayment = "/design-patterns/strategy/payment",
   DesignPatternsStrategyLogin = "/design-patterns/strategy/login",
@@ -36,6 +38,16 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
           {
             label: "Window Event",
             pathname: Page.DesignPatternsObserverWindowEvent,
+          },
+        ],
+      },
+      {
+        label: "State",
+        pathname: Page.DesignPatternsState,
+        children: [
+          {
+            label: "Onboarding",
+            pathname: Page.DesignPatternsStateOnboarding,
           },
         ],
       },
